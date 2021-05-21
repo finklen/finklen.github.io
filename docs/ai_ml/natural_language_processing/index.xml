@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NLP on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/natural_language_processing/</link>
+    <description>Recent content in NLP on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/natural_language_processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/natural_language_processing/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/natural_language_processing/concepts/</guid>
+      <description>Concepts #  https://eng.uber.com/lsh/
+Stemming - Stemming is the process of reducing inflection in words (e.g. troubled, troubles) to their root form (e.g. trouble). The “root” in this case may not be a real root word, but just a canonical form of the original word.
+The most common algorithm, which is also known to be empirically effective for English, is (Porters Algorithm)[https://tartarus.org/martin/PorterStemmer/]
+better alternative - embeddings
+Lemmatization Lemmatization on the surface is very similar to stemming, where the goal is to remove inflections and map a word to its root form.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Standards on Finklen</title>
+    <link>https://finklen.github.io/docs/software/standards/</link>
+    <description>Recent content in Standards on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/standards/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/serialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/serialization/</guid>
+      <description>Serialization #   XML JSON Avro Protobuf Thrift Binary  http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html</description>
+    </item>
+    
+    <item>
+      <title>HTTP/3</title>
+      <link>https://finklen.github.io/docs/software/standards/http_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/http_3/</guid>
+      <description>HTTP/3 #  https://quicwg.org/base-drafts/draft-ietf-quic-http.html
+https://www.infoq.com/news/2020/01/http-3-status/</description>
+    </item>
+    
+  </channel>
+</rss>

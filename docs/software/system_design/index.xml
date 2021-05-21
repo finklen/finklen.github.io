@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System design on Finklen</title>
+    <link>https://finklen.github.io/docs/software/system_design/</link>
+    <description>Recent content in System design on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/system_design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Seller Rank</title>
+      <link>https://finklen.github.io/docs/software/system_design/best_selling_rank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/best_selling_rank/</guid>
+      <description>Best Seller Rank #  Ranking best selling products in each category.</description>
+    </item>
+    
+    <item>
+      <title>Parking Loft</title>
+      <link>https://finklen.github.io/docs/software/system_design/parking_loft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/parking_loft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Top K</title>
+      <link>https://finklen.github.io/docs/software/system_design/topk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/topk/</guid>
+      <description>Top K #  https://www.evernote.com/shard/s440/client/snv?noteGuid=db5d1f47-fc86-4bed-3323-46a19a029216&amp;amp;noteKey=53aa5fffcc236d3b7ef209ef5d916639&amp;amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs440%2Fsh%2Fdb5d1f47-fc86-4bed-3323-46a19a029216%2F53aa5fffcc236d3b7ef209ef5d916639&amp;amp;title=Design%2Ba%2Bsystems%2Bwhich%2Bfinds%2BTop%2BK%2528Heavy%2BHitters%2529</description>
+    </item>
+    
+  </channel>
+</rss>

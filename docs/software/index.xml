@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Finklen</title>
+    <link>https://finklen.github.io/docs/software/</link>
+    <description>Recent content in Software on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Longest increasing subsequence</title>
+      <link>https://finklen.github.io/docs/software/algorithms/longest_increasing_subsequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/longest_increasing_subsequence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Max Sum Subarray</title>
+      <link>https://finklen.github.io/docs/software/algorithms/max_sub_array_sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/max_sub_array_sum/</guid>
+      <description>Max Sum Subarray #   Implemented using Kadane&amp;rsquo;s algorithm in O(n). At each index determine the max subarray and take that as the current max to the next iteration  </description>
+    </item>
+    
+  </channel>
+</rss>
