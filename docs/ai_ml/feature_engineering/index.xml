@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feature Engineering on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/feature_engineering/</link>
+    <description>Recent content in Feature Engineering on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/feature_engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/data_transformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/data_transformation/</guid>
+      <description>Data Transformation #   Normalization Attribute Construction Aggregation Attribute subset selection Discretization Generalization  Normalization #   Regression co-efficients depend on magnitude of feature variable Features with bigger magnitude overshadow the smaller ones Eculidian distance measure is sensitive to bigger mangnitude  Algorithm Sensitive to magnitude #   Linear and logistic regression Neural networks Support vector machines kNN K-Means clustering Linear discriminant analysis (LDA) Principal component analysis (PCA)  Types #   Min-Max normalization Z-Score normalization Decimal scaling normalization  Discretization #   Converting continuous values into discrete values   How to you choose number of patritions/bins Where to put the cut point  Depends on the problem being studied.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_extraction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_extraction/</guid>
+      <description>Transforms the orignal set of features into a into a different dimension of less features
+Feature creation #  Creating feature which has more info that the original dataset.
+Methodologies #    Feature extraction
+ Domain specific In multimedia, low-level (pitch, tonality), mid-level (fourier, wavelet), high-level(tag, genre)    Mapping data to new space
+ Fourier trans (freq domain) Wavelet trans (freq + time domain) Scale-Invariant Feature trans (SIFT) (Capute important/minuate points)    Feature construction</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_reduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_reduction/</guid>
+      <description>Feature Reduction #  Why? #  Too many features in a dataset complicates the model&amp;rsquo;s prediction strategy. Since most clustering models use some sort of distance measure, too many dimensions will result in many isolated clusters.
+How many is too many? #  One indication is when there are too many features than the observations.
+How? #   Principal Component Analysis Non-Negative Matrix Factorization Linear discriminant analysis t-SNE  References #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_selection/</guid>
+      <description>Feature Selection #  Data sets that data scientists work upon arrives from multitude of sources. Hence, transforming data from these multiple sources to a common format is a mandatory step for deriving meaningful inference. Data will also have errors/deviations at the source of origin as well. We have a to make a careful consideration on how to handle such data points since these affect the learning model developed.
+The extreme observations, when it influences the model performance are called influential points.</description>
+    </item>
+    
+    <item>
+      <title>Data Preprocessing</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/data_preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/data_preprocessing/</guid>
+      <description>Why? #  Engineer the data suitable for building faster and simple models.
+Steps,
+ Clean Format  Data Quality issues #   Missing values - Values not present. e.x. User&amp;rsquo;s unwillingness, non mandatory, storage issues, not applicable info, n/w &amp;amp; storage errors Duplicate data - Redundant data objects. Customer added new address, customers sharing address Inconsistent/Invalid data - Impossible values e.x. negative age, income, invalid zip code; Data entry errors Noise - Meaningless or invalid data; e.</description>
+    </item>
+    
+    <item>
+      <title>Feature Engineering</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_engineering/</guid>
+      <description>Feature Engineering #  The source of data available for Model training is vast, crude and usually not formatted. Various methods are employed to streamline the data to effectively train the model.
+Feature Selection #  In feature selection the input attributes are dropped or modified based on the model.
+Dimensionality Reduction #  Dimensionality reduction creates new combination of attributes. e.g. Principal Component Analysis, Singular Value Decomposition and Sammon’s Mapping.</description>
+    </item>
+    
+    <item>
+      <title>Gain Ratio</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/gain_ratio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/gain_ratio/</guid>
+      <description>Gain Ratio #   Multi class result  </description>
+    </item>
+    
+    <item>
+      <title>Gini Index</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/gini_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/gini_index/</guid>
+      <description>Gini Index #   Results in a binary value  </description>
+    </item>
+    
+    <item>
+      <title>Information Gain</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/information_gain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/information_gain/</guid>
+      <description>Information Gain #   Multi class result  </description>
+    </item>
+    
+  </channel>
+</rss>

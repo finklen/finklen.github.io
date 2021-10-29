@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Finklen</title>
+    <link>https://finklen.github.io/docs/software/languages/</link>
+    <description>Recent content in Programming on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/languages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/if_vs_switch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/if_vs_switch/</guid>
+      <description>If vs Switch #  As we start learning any programming language if is the first conditional construct that we encounter. The construct may be expresssion or a statement, either way, it is an stepping stone towards the higher power. Often, we get a choice between if and switch and code reviwers would not likely agree with the choice.
+During my code review I consider the below to decide,
+ More than 3 if/else condition should be a switch The expression evaluated has more than 1 condition if in case of OR &amp;amp; AND conditions in evaluation  There are alternatives to if and switch that are expressive and elegant.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/java/generics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/java/generics/</guid>
+      <description>Generics #  Proper bound should be set when generic programming is leveraged.
+ Upper bound - &amp;lt;? extends Type&amp;gt; Lower bound - &amp;lt;? super Type&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/java/jupiter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/java/jupiter/</guid>
+      <description>https://blogs.oracle.com/javamagazine/beyond-the-simple-an-in-depth-look-at-junit-5s-nested-tests-dynamic-tests-parameterized-tests-and-extensions?source=:em:nw:mt:::RC_WWMK200429P00043:NSL400084275&amp;amp;elq_mid=171707&amp;amp;sh=0822162609092617101828031334&amp;amp;cmid=WWMK200429P00043C0007</description>
+    </item>
+    
+  </channel>
+</rss>

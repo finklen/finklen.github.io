@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finklen</title>
+    <link>https://finklen.github.io/</link>
+    <description>Recent content on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image Recognition</title>
+      <link>https://finklen.github.io/docs/ai_ml/computer_vision/image_recognition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/computer_vision/image_recognition/</guid>
+      <description>Object recognition and Image Processing #  Techiniques,
+ HOG - Histogram of Oriented Graphics SIFT - Scale Invariant Feature Transform CNN - Conventional Neural Network  </description>
+    </item>
+    
+    <item>
+      <title>Classification Model Evaluation</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/evalutaion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/evalutaion/</guid>
+      <description>Evaluation Metrics - Classification Accuracy
+Evaluation of classification model #  Generative model Naive Bayes models the joint distribution of the feature X and target Y, and then predicts the posterior probability given as P(y|x). e.g. Naive Bayes, Bayesian Networks and Hidden Markov models
+Discriminative model Logistic regression directly models the posterior probability of P(y|x) by learning the input to output mapping by minimising the error. e.g. Logistic Regression, Support Vector Machine and Conditional Random Fields</description>
+    </item>
+    
+    <item>
+      <title>Decision Trees</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/decision_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/decision_trees/</guid>
+      <description> Eager learners Works only in discrete data  </description>
+    </item>
+    
+    <item>
+      <title>FIX Protocol</title>
+      <link>https://finklen.github.io/docs/software/protocols/fix_protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/protocols/fix_protocol/</guid>
+      <description>Financial Information Exchange Protocol #  References #    Link-I  </description>
+    </item>
+    
+    <item>
+      <title>kNN Classifier</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/kNN_classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/kNN_classification/</guid>
+      <description>K Nearest Neighbour(kNN) Classifier #    Works with numeric data
+  Lazy learning
+  Instance based, lazy evaluation model i.e. store the data, at times with minimal processing, and evaulted once the test tuple is received
+  Approaches #    k-nearest neighbour approach - Instance represented as a point in euclidean space
+  Case-based reasoning - Uses symbolic representations and knowledge-based inferences</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes Classifier</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/naive_bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/naive_bayes/</guid>
+      <description> Assumes the features are independent and contributes to the predict (Class conditional assumption) Based on bayes theorem  H - Hypothesis E - Evidence P(H) - Prior Probability P(H|E) - Posterior Probability P(E|H) - Likelihood Ratio
+Probability of occurrence of hypothesis H given E is,
+P(H|E) = P(E|H) * P(H) / P(E)
+P(A|B) = P(A inter B) / P(B)
+P(B|A) = P(B inter A) / P(A)
+  \[posterior = prior x likelihood\]  Types #   Guassian - Normally distributed data Multinomial - Bernoulli - Feature vectors are binary  </description>
+    </item>
+    
+    <item>
+      <title>Support Vector Machines</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/support_vector_machines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/support_vector_machines/</guid>
+      <description>The shortest distance between the observations and the threshold is called the margin. When we use the threshold that gives the largest margin to make classifications it is call Maximum margin classifier.
+  Eager learners
+  Works for both linear and non-linear classification
+  Discriminative model
+  Leverages max margin classifier
+  Feature scaling
+  Distance based algorithm
+  Maximum margin classifier #  Sensitive to outliers</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/bias_and_variance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/bias_and_variance/</guid>
+      <description>Bias #  The difference between the data points and the fit line is bias.
+Variance #  The estimation diference across different set is variability
+Ideal model should have low bias and low variance. Simple and complex models are created to find the optimal bias and variance across test and training set.
+Finding optimal trade off #   Regularization Boosting Bagging  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/diffusion_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/diffusion_models/</guid>
+      <description>Diffusion Models #  Diffusion models are used in forecasting the future for a possibility without emprical knowledge.
+  BASS  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/data_transformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/data_transformation/</guid>
+      <description>Data Transformation #   Normalization Attribute Construction Aggregation Attribute subset selection Discretization Generalization  Normalization #   Regression co-efficients depend on magnitude of feature variable Features with bigger magnitude overshadow the smaller ones Eculidian distance measure is sensitive to bigger mangnitude  Algorithm Sensitive to magnitude #   Linear and logistic regression Neural networks Support vector machines kNN K-Means clustering Linear discriminant analysis (LDA) Principal component analysis (PCA)  Types #   Min-Max normalization Z-Score normalization Decimal scaling normalization  Discretization #   Converting continuous values into discrete values   How to you choose number of patritions/bins Where to put the cut point  Depends on the problem being studied.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_extraction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_extraction/</guid>
+      <description>Transforms the orignal set of features into a into a different dimension of less features
+Feature creation #  Creating feature which has more info that the original dataset.
+Methodologies #    Feature extraction
+ Domain specific In multimedia, low-level (pitch, tonality), mid-level (fourier, wavelet), high-level(tag, genre)    Mapping data to new space
+ Fourier trans (freq domain) Wavelet trans (freq + time domain) Scale-Invariant Feature trans (SIFT) (Capute important/minuate points)    Feature construction</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_reduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_reduction/</guid>
+      <description>Feature Reduction #  Why? #  Too many features in a dataset complicates the model&amp;rsquo;s prediction strategy. Since most clustering models use some sort of distance measure, too many dimensions will result in many isolated clusters.
+How many is too many? #  One indication is when there are too many features than the observations.
+How? #   Principal Component Analysis Non-Negative Matrix Factorization Linear discriminant analysis t-SNE  References #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_selection/</guid>
+      <description>Feature Selection #  Data sets that data scientists work upon arrives from multitude of sources. Hence, transforming data from these multiple sources to a common format is a mandatory step for deriving meaningful inference. Data will also have errors/deviations at the source of origin as well. We have a to make a careful consideration on how to handle such data points since these affect the learning model developed.
+The extreme observations, when it influences the model performance are called influential points.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/measure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/measure/</guid>
+      <description>Evaluating model proficieny #  Devloping a machine learning model is one half of the coin, the other half however is measure the performance of the model and improving its efficiency. There are multidude ways of measuring the performance of model, most of them are generic in nature and can be used across mutliple models, and some are specifically designed towards specific learnging algorithms.
+Cross Validation #   Statistical method to evalaute the model Lower bias  k-fold Cross Validation #   Evaluating models with limited set of data  Pseudocode,</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/natural_language_processing/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/natural_language_processing/concepts/</guid>
+      <description>Concepts #  https://eng.uber.com/lsh/
+Stemming - Stemming is the process of reducing inflection in words (e.g. troubled, troubles) to their root form (e.g. trouble). The “root” in this case may not be a real root word, but just a canonical form of the original word.
+The most common algorithm, which is also known to be empirically effective for English, is (Porters Algorithm)[https://tartarus.org/martin/PorterStemmer/]
+better alternative - embeddings
+Lemmatization Lemmatization on the surface is very similar to stemming, where the goal is to remove inflections and map a word to its root form.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/logistic_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/logistic_regression/</guid>
+      <description>Logistic Regression #   Eager learners Logistic regression is a classification algorithm, that uses Sigmoid function. S-shaped curve varying between 0 and 1 and asymtotes at the tails Unlike linear regression the out vairable is discrete Logictic function takes any value and maps it between the range of 0 and 1 Can work on both continuous and discrete attributes When using multiple attributes we cannot compare models as such. Hence we remove/add attributes and check if the variableseffect on prediction is greater than zero.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/concepts/</guid>
+      <description>Concepts #  Multicollinearity #  Phenomenon in which one predictor variable can be predicted from one another
+  Wikipedia  Homoscedasticity #  Error term being constant across all tuples
+  External  Heteroscedasticity #  Error term varies significantly across tuples. Ordinary Least Squares (OLS) gives equal weight to all observations. When heteroscedasticity is present Weighted least squares is to be used.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/linear_regression/</guid>
+      <description>Regression - Supervised Learning Algorithm #  Loss/Cost functions measure the correctness of the model prediction. Various methods are used depending on the requirement.
+ Fit using residual least squares a.k.a sum of squares method i.e. the line that reduces the distance between the data points Using the residuals   \(R^{2}\)  is calcuated to compare simple and complex models (# of attributes used for prediction) Calcualte p-value for the calculated  \(R^{2}\)     \(R^{2}\)  #   Percentage of variation explained between two variables Ranges between 0 to 1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/terminologies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/terminologies/</guid>
+      <description>Probability #  Random experiment - An act that has predefined number of outcomes.
+Elementary Event - Each individual possiblity in a random experiment. All possible elementary events of an experiment together make the the sample space of the experiment.
+Random event - Combination of set/subset of elementary events, such as tosssing a coin multiple times.
+Marginal Probablity - Probablity of occurance of an event. This is probability in its most basic form.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/time_series_analysis/models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/time_series_analysis/models/</guid>
+      <description>Classical / Statistical Models — Moving Averages, Exponential smoothing, ARIMA, SARIMA, TBATS Machine Learning — Linear Regression, XGBoost, Random Forest, or any ML model with reduction methods Deep Learning — RNN, LSTM </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/iot/lpwan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/iot/lpwan/</guid>
+      <description>LPWAN #  https://docs.arduino.cc/foundations/wireless/low-power-wide-area-networks-101</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/data_structures/bitmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/bitmap/</guid>
+      <description>BitMap #  Used in JFR (Java Flight Recorer for leak profiler)
+References #   https://dzone.com/articles/introduction-to-redis-data-structures-bitmaps  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/data_structures/murmurhash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/murmurhash/</guid>
+      <description>MurMurHash #  Non-cryptographic hash function</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/data_structures/probabilistic_data_structures/bloom_filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/probabilistic_data_structures/bloom_filters/</guid>
+      <description>Bloom filters #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/data_structures/probabilistic_data_structures/hyperloglog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/probabilistic_data_structures/hyperloglog/</guid>
+      <description>HyperLogLog #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/file_systems/clustered_file_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/file_systems/clustered_file_systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/file_systems/distributed_file_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/file_systems/distributed_file_system/</guid>
+      <description>Distributed File Systems #  https://en.wikipedia.org/wiki/Clustered_file_system#Distributed_file_systems
+  Lustre  https://en.wikipedia.org/wiki/GPFS</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/if_vs_switch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/if_vs_switch/</guid>
+      <description>If vs Switch #  As we start learning any programming language if is the first conditional construct that we encounter. The construct may be expresssion or a statement, either way, it is an stepping stone towards the higher power. Often, we get a choice between if and switch and code reviwers would not likely agree with the choice.
+During my code review I consider the below to decide,
+ More than 3 if/else condition should be a switch The expression evaluated has more than 1 condition if in case of OR &amp;amp; AND conditions in evaluation  There are alternatives to if and switch that are expressive and elegant.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/java/generics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/java/generics/</guid>
+      <description>Generics #  Proper bound should be set when generic programming is leveraged.
+ Upper bound - &amp;lt;? extends Type&amp;gt; Lower bound - &amp;lt;? super Type&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/languages/java/jupiter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/languages/java/jupiter/</guid>
+      <description>https://blogs.oracle.com/javamagazine/beyond-the-simple-an-in-depth-look-at-junit-5s-nested-tests-dynamic-tests-parameterized-tests-and-extensions?source=:em:nw:mt:::RC_WWMK200429P00043:NSL400084275&amp;amp;elq_mid=171707&amp;amp;sh=0822162609092617101828031334&amp;amp;cmid=WWMK200429P00043C0007</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/networking/bgp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/networking/bgp/</guid>
+      <description>Border Gateway Protocol #  https://www.cloudflare.com/en-gb/learning/security/glossary/what-is-bgp/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/os/Windows/tracing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/os/Windows/tracing/</guid>
+      <description>Tracing errors #   Run sxstrace.exe Trace -logfile:c:\app.log Execute the file that you are tracing After running the application, end Trace Next parse the log file with sxstrace.exe Parse -logfile:c:\app.log -outfile:c:\app.txt  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/security/data_security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/security/data_security/</guid>
+      <description>Data Security #  Securing Data at Rest #  Securing Data in Transit #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/security/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/security/security/</guid>
+      <description>Security #   TLS Key exchange algorithms TLS Signature algorithms  Server decides which algorithm to use
+BGP with RPKI (Resource Public key infrastructure)
+   TPM - Temper Resistant Crypto chip
+ Endorsement Key [By manufacturere]  linux seccomp
+https://www.infoq.com/presentations/reconcile-security-performance/?utm_source=notification_email&amp;amp;utm_campaign=notifications&amp;amp;utm_medium=link&amp;amp;utm_content=content_in_followed_topic&amp;amp;utm_term=daily</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/data_locality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/data_locality/</guid>
+      <description>Google spanner DB locality features Oracle&amp;rsquo;s multi-table index cluster tables Bigtable&amp;rsquo;s column-family</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/document_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/document_model/</guid>
+      <description>Document Model #  Hierarchical structure of data nested within each other Access path for nested attributes is required Has same problem as RDBMS with respect to Joins. Data locality can be a problem for for entity. i.e. complete document is read and written every time. Some models provide sub-document lookup and updates (Couchbase)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/graph_data_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/graph_data_model/</guid>
+      <description>Graph-like Data Models #  Suitable for many to many relationship models
+Calorich M ativan 1 mg *M
+liposerin concor 5 mg Renerve Bt 3</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/serialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/serialization/</guid>
+      <description>Serialization #   XML JSON Avro Protobuf Thrift Binary  http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/streams/mechanism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/streams/mechanism/</guid>
+      <description>WebSocket #  WebTransport #  https://wicg.github.io/web-transport/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/readme/</guid>
+      <description>Add files to docs #  Add files to the docs directory for it to be visible in the website.</description>
+    </item>
+    
+    <item>
+      <title>AVL Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/avl_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/avl_trees/</guid>
+      <description> Balanced BST   </description>
+    </item>
+    
+    <item>
+      <title>B-Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/b_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/b_trees/</guid>
+      <description>B-Trees #   Preferred structure to store indexes in disk Balanced tree  Metrics #  Depth for a tree of n keys it is O(log N)
+Branching factor #   Number of child references from each node of the Tree  Write amplification #  A write request that can amplify due to SSTable merge, WAL writes, Split of B-Tree node etc.
+Usages #   Used in Berkley DB [Initial version of chubby depended on it]  Optimisations #   Using WAL (Write ahead log) to survive crash if tree is being updated  </description>
+    </item>
+    
+    <item>
+      <title>Best Seller Rank</title>
+      <link>https://finklen.github.io/docs/software/system_design/best_selling_rank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/best_selling_rank/</guid>
+      <description>Best Seller Rank #  Ranking best selling products in each category.</description>
+    </item>
+    
+    <item>
+      <title>Binary Search Tree</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/binary_search_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/binary_search_trees/</guid>
+      <description>Binary Search Trees #   Every node has atmost 2 children Left child is less than the parent Right child is greater than the parent Rotated when the tree is unbalanced  Why unbalanced is a problem? - O(~log N) is not possible in unbalanced tree
+Balanced BST #  AVL Trees Red-Black Trees
+Operations #   Typically soft deleted i.e. marked as deleted but the element stays  In-Order traversal - Left -&amp;gt; Root -&amp;gt; Right (recursive) The result will be ascending order</description>
+    </item>
+    
+    <item>
+      <title>Classification</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/classification/</guid>
+      <description>Classification Algorithms #  Eager and Lazy Learning #  Eager learning models creates a model using the training data and use that on the test data for classification.
+Lazy(or instance based) learning models simply stores the training data set and waits until the test dataset is given, e.g. kNN classifier. Less time in training and mode time in test.
+Lazy learning approaches #   k-nearest neighbour Case-base reasoning  </description>
+    </item>
+    
+    <item>
+      <title>Cluster Evaluation</title>
+      <link>https://finklen.github.io/docs/ai_ml/unsupervised_learning/cluster_evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/unsupervised_learning/cluster_evaluation/</guid>
+      <description>Clustering #   Clustering tendency Number of clusters Clustering quality  Clustering tendency #   Hopkins test  Number of clusters #   Domain knowledge Data Driven  Elbow Gap Statistic Empirical (root of data-points)    Clustering quality #   Extrinsic measure Intrinsic measure  https://towardsdatascience.com/clustering-evaluation-strategies-98a4006fcfc</description>
+    </item>
+    
+    <item>
+      <title>Content addressable file systems</title>
+      <link>https://finklen.github.io/docs/software/file_systems/content-addressable-file-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/file_systems/content-addressable-file-system/</guid>
+      <description>Content addressable file system #  e.x. Git
+https://git-scm.com/book/en/v2/Git-Internals-Git-Objects</description>
+    </item>
+    
+    <item>
+      <title>CRDT</title>
+      <link>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/crdt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/crdt/</guid>
+      <description>Conflict Free Replicated DataTypes #   G-Counter PN-Counter G-Set (Grow only Set) 2P-Set LWW-Element-Set OR-Set ORSWOT LWW-Map (Last Write Wins)  Primary Properties #   Cummutative Idempotent  </description>
+    </item>
+    
+    <item>
+      <title>Data Preprocessing</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/data_preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/data_preprocessing/</guid>
+      <description>Why? #  Engineer the data suitable for building faster and simple models.
+Steps,
+ Clean Format  Data Quality issues #   Missing values - Values not present. e.x. User&amp;rsquo;s unwillingness, non mandatory, storage issues, not applicable info, n/w &amp;amp; storage errors Duplicate data - Redundant data objects. Customer added new address, customers sharing address Inconsistent/Invalid data - Impossible values e.x. negative age, income, invalid zip code; Data entry errors Noise - Meaningless or invalid data; e.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Computing</title>
+      <link>https://finklen.github.io/docs/software/architecture/distributed_computing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/architecture/distributed_computing/</guid>
+      <description>Percentile Approximation #   Forward Decay hdrHistogram t-digest  In-Memory Data Grids #    Oracle Coherence  </description>
+    </item>
+    
+    <item>
+      <title>Distributed Hash Table</title>
+      <link>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/distributed_hash_table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/distributed_hash_table/</guid>
+      <description>Distributed Hash Table #   No centralized server. Peer to peer  Popular Algorithms #   Chord Pastry Tapestry Kademlia  Tonika Routing
+Feross Aboukhadijeh&amp;rsquo;s talk
+https://learntla.com/introduction/</description>
+    </item>
+    
+    <item>
+      <title>Feature Engineering</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/feature_engineering/</guid>
+      <description>Feature Engineering #  The source of data available for Model training is vast, crude and usually not formatted. Various methods are employed to streamline the data to effectively train the model.
+Feature Selection #  In feature selection the input attributes are dropped or modified based on the model.
+Dimensionality Reduction #  Dimensionality reduction creates new combination of attributes. e.g. Principal Component Analysis, Singular Value Decomposition and Sammon’s Mapping.</description>
+    </item>
+    
+    <item>
+      <title>Fenwick Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/fenwick_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/fenwick_trees/</guid>
+      <description>Fenwick Trees (or) Binary Indexed Trees #  Use cases #   Prefix sum of arrays  Complexity #  Space - O(N)
+   Operation Complexity     Create O(N * log N)   Update O(log N)        </description>
+    </item>
+    
+    <item>
+      <title>Fractal Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/fractal_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/fractal_trees/</guid>
+      <description>Fractal Trees #   Variant of B-Trees  </description>
+    </item>
+    
+    <item>
+      <title>Gain Ratio</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/gain_ratio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/gain_ratio/</guid>
+      <description>Gain Ratio #   Multi class result  </description>
+    </item>
+    
+    <item>
+      <title>Gini Index</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/gini_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/gini_index/</guid>
+      <description>Gini Index #   Results in a binary value  </description>
+    </item>
+    
+    <item>
+      <title>HTTP/3</title>
+      <link>https://finklen.github.io/docs/software/standards/http_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/http_3/</guid>
+      <description>HTTP/3 #  https://quicwg.org/base-drafts/draft-ietf-quic-http.html
+https://www.infoq.com/news/2020/01/http-3-status/</description>
+    </item>
+    
+    <item>
+      <title>Information Gain</title>
+      <link>https://finklen.github.io/docs/ai_ml/feature_engineering/information_gain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/feature_engineering/information_gain/</guid>
+      <description>Information Gain #   Multi class result  </description>
+    </item>
+    
+    <item>
+      <title>Inter-Planetary file system (ISPF)</title>
+      <link>https://finklen.github.io/docs/software/file_systems/inter_planetary_file_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/file_systems/inter_planetary_file_system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K-Means Clustering</title>
+      <link>https://finklen.github.io/docs/ai_ml/unsupervised_learning/k-means/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/unsupervised_learning/k-means/</guid>
+      <description>K-Means clustering #  Optimal K #   Elbow curve Silhoutte Score  </description>
+    </item>
+    
+    <item>
+      <title>Liner Regression Approach</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/approach/</guid>
+      <description> Fit a line to the data set using least squares approach. Calculate R^2 Calculate p-value for the R^2  Calculating R^2
+ Using the best-file line chosen using the least squares approach, we use test data to verify how good estimate the line provides.  Evaluation Metrics #   Mean Square Error Mean Absolute Error Root Mean Squared Error  </description>
+    </item>
+    
+    <item>
+      <title>Log structured file system</title>
+      <link>https://finklen.github.io/docs/software/file_systems/log_structured_file_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/file_systems/log_structured_file_systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Longest increasing subsequence</title>
+      <link>https://finklen.github.io/docs/software/algorithms/longest_increasing_subsequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/longest_increasing_subsequence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Max Sum Subarray</title>
+      <link>https://finklen.github.io/docs/software/algorithms/max_sub_array_sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/max_sub_array_sum/</guid>
+      <description>Max Sum Subarray #   Implemented using Kadane&amp;rsquo;s algorithm in O(n). At each index determine the max subarray and take that as the current max to the next iteration  </description>
+    </item>
+    
+    <item>
+      <title>NAT</title>
+      <link>https://finklen.github.io/docs/software/networking/nat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/networking/nat/</guid>
+      <description>Network Address Translation (NAT) #  Hole punching #   Alternative  </description>
+    </item>
+    
+    <item>
+      <title>Parking Loft</title>
+      <link>https://finklen.github.io/docs/software/system_design/parking_loft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/parking_loft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RDBMS</title>
+      <link>https://finklen.github.io/docs/software/standards/database/rdbms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/rdbms/</guid>
+      <description>RDBMS #  Shredding Splitting an entity into multiple relationshsips [Person, Education, Experience]
+Schema on Write #  Strict enforcement of schema unlike NoSQL databases that has loose schema (Schema on Read).
+Schema Changes #  Schema changes are hard to change without downtime. Database migration tools must be used for easier maintance and roll backs.
+ Liquibase Flyway  </description>
+    </item>
+    
+    <item>
+      <title>Segment Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/segment_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/segment_trees/</guid>
+      <description>Use cases #   Range sub-queries i.e. min/max within range of values in array  </description>
+    </item>
+    
+    <item>
+      <title>Selection Sort</title>
+      <link>https://finklen.github.io/docs/software/algorithms/sorting_algorithms/selection_sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/sorting_algorithms/selection_sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sorted String table</title>
+      <link>https://finklen.github.io/docs/software/data_structures/sstrees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/sstrees/</guid>
+      <description>Sorted String Table (or) SSTrees #  </description>
+    </item>
+    
+    <item>
+      <title>Sorting algorithms</title>
+      <link>https://finklen.github.io/docs/software/algorithms/sorting_algorithms/sorting_algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/algorithms/sorting_algorithms/sorting_algorithms/</guid>
+      <description>Properties #   Time complexity Space complexity Stability -&amp;gt; Relative ordering Recursive (or) Non-Recursive Internal (or) External  </description>
+    </item>
+    
+    <item>
+      <title>Splay Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/splay_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/splay_trees/</guid>
+      <description>Splay Trees #  Use cases #   Used in cache. Recently accessed node is made the root  </description>
+    </item>
+    
+    <item>
+      <title>TLA&#43;</title>
+      <link>https://finklen.github.io/docs/software/architecture/formal-methods/tla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/architecture/formal-methods/tla/</guid>
+      <description>https://cacm.acm.org/magazines/2015/4/184701-how-amazon-web-services-uses-formal-methods/fulltext</description>
+    </item>
+    
+    <item>
+      <title>Top K</title>
+      <link>https://finklen.github.io/docs/software/system_design/topk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/system_design/topk/</guid>
+      <description>Top K #  https://www.evernote.com/shard/s440/client/snv?noteGuid=db5d1f47-fc86-4bed-3323-46a19a029216&amp;amp;noteKey=53aa5fffcc236d3b7ef209ef5d916639&amp;amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs440%2Fsh%2Fdb5d1f47-fc86-4bed-3323-46a19a029216%2F53aa5fffcc236d3b7ef209ef5d916639&amp;amp;title=Design%2Ba%2Bsystems%2Bwhich%2Bfinds%2BTop%2BK%2528Heavy%2BHitters%2529</description>
+    </item>
+    
+  </channel>
+</rss>

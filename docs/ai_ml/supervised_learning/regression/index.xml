@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/</link>
+    <description>Recent content in Regression on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/supervised_learning/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/concepts/</guid>
+      <description>Concepts #  Multicollinearity #  Phenomenon in which one predictor variable can be predicted from one another
+  Wikipedia  Homoscedasticity #  Error term being constant across all tuples
+  External  Heteroscedasticity #  Error term varies significantly across tuples. Ordinary Least Squares (OLS) gives equal weight to all observations. When heteroscedasticity is present Weighted least squares is to be used.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/linear_regression/</guid>
+      <description>Regression - Supervised Learning Algorithm #  Loss/Cost functions measure the correctness of the model prediction. Various methods are used depending on the requirement.
+ Fit using residual least squares a.k.a sum of squares method i.e. the line that reduces the distance between the data points Using the residuals   \(R^{2}\)  is calcuated to compare simple and complex models (# of attributes used for prediction) Calcualte p-value for the calculated  \(R^{2}\)     \(R^{2}\)  #   Percentage of variation explained between two variables Ranges between 0 to 1.</description>
+    </item>
+    
+    <item>
+      <title>Liner Regression Approach</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/regression/approach/</guid>
+      <description> Fit a line to the data set using least squares approach. Calculate R^2 Calculate p-value for the R^2  Calculating R^2
+ Using the best-file line chosen using the least squares approach, we use test data to verify how good estimate the line provides.  Evaluation Metrics #   Mean Square Error Mean Absolute Error Root Mean Squared Error  </description>
+    </item>
+    
+  </channel>
+</rss>

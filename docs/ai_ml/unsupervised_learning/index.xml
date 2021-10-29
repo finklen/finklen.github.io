@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unsupervised learning on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/unsupervised_learning/</link>
+    <description>Recent content in Unsupervised learning on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/unsupervised_learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cluster Evaluation</title>
+      <link>https://finklen.github.io/docs/ai_ml/unsupervised_learning/cluster_evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/unsupervised_learning/cluster_evaluation/</guid>
+      <description>Clustering #   Clustering tendency Number of clusters Clustering quality  Clustering tendency #   Hopkins test  Number of clusters #   Domain knowledge Data Driven  Elbow Gap Statistic Empirical (root of data-points)    Clustering quality #   Extrinsic measure Intrinsic measure  https://towardsdatascience.com/clustering-evaluation-strategies-98a4006fcfc</description>
+    </item>
+    
+    <item>
+      <title>K-Means Clustering</title>
+      <link>https://finklen.github.io/docs/ai_ml/unsupervised_learning/k-means/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/unsupervised_learning/k-means/</guid>
+      <description>K-Means clustering #  Optimal K #   Elbow curve Silhoutte Score  </description>
+    </item>
+    
+  </channel>
+</rss>

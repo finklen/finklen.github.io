@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tree Structures on Finklen</title>
+    <link>https://finklen.github.io/docs/software/data_structures/trees/</link>
+    <description>Recent content in Tree Structures on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/data_structures/trees/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AVL Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/avl_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/avl_trees/</guid>
+      <description> Balanced BST   </description>
+    </item>
+    
+    <item>
+      <title>B-Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/b_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/b_trees/</guid>
+      <description>B-Trees #   Preferred structure to store indexes in disk Balanced tree  Metrics #  Depth for a tree of n keys it is O(log N)
+Branching factor #   Number of child references from each node of the Tree  Write amplification #  A write request that can amplify due to SSTable merge, WAL writes, Split of B-Tree node etc.
+Usages #   Used in Berkley DB [Initial version of chubby depended on it]  Optimisations #   Using WAL (Write ahead log) to survive crash if tree is being updated  </description>
+    </item>
+    
+    <item>
+      <title>Binary Search Tree</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/binary_search_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/binary_search_trees/</guid>
+      <description>Binary Search Trees #   Every node has atmost 2 children Left child is less than the parent Right child is greater than the parent Rotated when the tree is unbalanced  Why unbalanced is a problem? - O(~log N) is not possible in unbalanced tree
+Balanced BST #  AVL Trees Red-Black Trees
+Operations #   Typically soft deleted i.e. marked as deleted but the element stays  In-Order traversal - Left -&amp;gt; Root -&amp;gt; Right (recursive) The result will be ascending order</description>
+    </item>
+    
+    <item>
+      <title>Fenwick Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/fenwick_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/fenwick_trees/</guid>
+      <description>Fenwick Trees (or) Binary Indexed Trees #  Use cases #   Prefix sum of arrays  Complexity #  Space - O(N)
+   Operation Complexity     Create O(N * log N)   Update O(log N)        </description>
+    </item>
+    
+    <item>
+      <title>Fractal Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/fractal_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/fractal_trees/</guid>
+      <description>Fractal Trees #   Variant of B-Trees  </description>
+    </item>
+    
+    <item>
+      <title>Segment Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/segment_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/segment_trees/</guid>
+      <description>Use cases #   Range sub-queries i.e. min/max within range of values in array  </description>
+    </item>
+    
+    <item>
+      <title>Splay Trees</title>
+      <link>https://finklen.github.io/docs/software/data_structures/trees/splay_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/trees/splay_trees/</guid>
+      <description>Splay Trees #  Use cases #   Used in cache. Recently accessed node is made the root  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating Systems on Finklen</title>
+    <link>https://finklen.github.io/docs/software/os/</link>
+    <description>Recent content in Operating Systems on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/os/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/os/Windows/tracing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/os/Windows/tracing/</guid>
+      <description>Tracing errors #   Run sxstrace.exe Trace -logfile:c:\app.log Execute the file that you are tracing After running the application, end Trace Next parse the log file with sxstrace.exe Parse -logfile:c:\app.log -outfile:c:\app.txt  </description>
+    </item>
+    
+  </channel>
+</rss>

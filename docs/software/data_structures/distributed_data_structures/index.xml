@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed data structures on Finklen</title>
+    <link>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/</link>
+    <description>Recent content in Distributed data structures on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/data_structures/distributed_data_structures/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CRDT</title>
+      <link>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/crdt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/crdt/</guid>
+      <description>Conflict Free Replicated DataTypes #   G-Counter PN-Counter G-Set (Grow only Set) 2P-Set LWW-Element-Set OR-Set ORSWOT LWW-Map (Last Write Wins)  Primary Properties #   Cummutative Idempotent  </description>
+    </item>
+    
+    <item>
+      <title>Distributed Hash Table</title>
+      <link>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/distributed_hash_table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/data_structures/distributed_data_structures/distributed_hash_table/</guid>
+      <description>Distributed Hash Table #   No centralized server. Peer to peer  Popular Algorithms #   Chord Pastry Tapestry Kademlia  Tonika Routing
+Feross Aboukhadijeh&amp;rsquo;s talk
+https://learntla.com/introduction/</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Feature Engineering #  The source of data available for Model training is vast, crude and usually not formatted. Various methods are employed to streamline the data to effectively train the model.
+Feature Selection #  In feature selection the input attributes are dropped or modified based on the model.
+Dimensionality Reduction #  Dimensionality reduction creates new combination of attributes. e.g. Principal Component Analysis, Singular Value Decomposition and Sammon’s Mapping.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Feature Engineering" />
+<meta property="og:description" content="Feature Engineering #  The source of data available for Model training is vast, crude and usually not formatted. Various methods are employed to streamline the data to effectively train the model.
+Feature Selection #  In feature selection the input attributes are dropped or modified based on the model.
+Dimensionality Reduction #  Dimensionality reduction creates new combination of attributes. e.g. Principal Component Analysis, Singular Value Decomposition and Sammon’s Mapping." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://finklen.github.io/docs/ai_ml/feature_engineering/feature_engineering/" />
+<meta property="article:modified_time" content="2020-08-10T23:16:14+05:30" />
+<title>Feature Engineering | Finklen</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.f4513b2d8fab87aa86ea84b12e6ef34545da99769cec9d70c06ab774f08bda78.css" integrity="sha256-9FE7LY&#43;rh6qG6oSxLm7zRUXamXac7J1wwGq3dPCL2ng=">
+<script defer src="/en.search.min.7f0a1078eb9d2490a0d5be7c04375452c0548bb7f83fae1e2f050ae837aaca4a.js" integrity="sha256-fwoQeOudJJCg1b58BDdUUsBUi7f4P64eLwUK6Deqyko="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Finklen</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/" class="collapsed ">AI and ML</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/computer_vision/" class="collapsed ">Computer Vision</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/" class="collapsed ">Feature Engineering</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/data_transformation/" class="">Data Transformation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/feature_extraction/" class="">Feature Extraction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/feature_reduction/" class="">Feature Reduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/feature_selection/" class="">Feature Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/data_preprocessing/" class="">Data Preprocessing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/feature_engineering/" class="active">Feature Engineering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/gain_ratio/" class="">Gain Ratio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/gini_index/" class="">Gini Index</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/information_gain/" class="">Information Gain</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/natural_language_processing/" class="collapsed ">NLP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/bias_and_variance/" class="">Bias and Variance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/diffusion_models/" class="">Diffusion Models</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/measure/" class="">Measure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/terminologies/" class="">Terminologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Time Series Analysis</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/time_series_analysis/models/" class="">Models</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/reinforcement_learning/" class="">Reinforcement learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/" class="collapsed ">Supervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/unsupervised_learning/" class="collapsed ">Unsupervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/" class="">Software</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/data_structures/" class="collapsed ">Data Structures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/file_systems/" class="collapsed ">File Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/networking/" class="collapsed ">Networking</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/os/" class="collapsed ">Operating Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/languages/" class="collapsed ">Programming</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/protocols/" class="collapsed ">Protocols</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/security/" class="collapsed ">Security</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/architecture/" class="collapsed ">Software Architectures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/" class="collapsed ">Standards</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/algorithms/max_sub_array_sum/" class="">Max Sum Subarray</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/" class="">System design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/best_selling_rank/" class="">Best Seller Rank</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/topk/" class="">Top K</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/iot/lpwan/" class="">Lpwan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Feature Engineering</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#feature-selection">Feature Selection</a></li>
+    <li><a href="#dimensionality-reduction">Dimensionality Reduction</a>
+      <ul>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#outlier-detection">Outlier Detection</a>
+      <ul>
+        <li><a href="#univariate-analysis">Univariate analysis</a>
+          <ul>
+            <li><a href="#box-plot">Box-Plot</a></li>
+            <li><a href="#scatter-plot">Scatter Plot</a></li>
+            <li><a href="#iqr-score">IQR Score</a></li>
+            <li><a href="#cooks-distance">Cook&rsquo;s Distance</a></li>
+            <li><a href="#z-score">Z-Score</a></li>
+          </ul>
+        </li>
+        <li><a href="#multivariate-analysis">Multivariate analysis</a>
+          <ul>
+            <li><a href="#principal-component-analysis-pca">Principal Component Analysis (PCA)</a></li>
+            <li><a href="#local-outlier-factor-lof">Local Outlier Factor (LOF)</a></li>
+            <li><a href="#high-contrast-subspaces-for-density-based-outlier-ranking-hics">High Contrast Subspaces for Density-Based Outlier Ranking (HiCS)</a></li>
+          </ul>
+        </li>
+        <li><a href="#handling-outliers">Handling Outliers</a>
+          <ul>
+            <li><a href="#drop-outlier">Drop Outlier</a></li>
+            <li><a href="#impute-with-meanmedian">Impute with Mean/Median</a></li>
+            <li><a href="#winsorizing">Winsorizing</a></li>
+            <li><a href="#log-scale-transformation">Log-Scale Transformation</a></li>
+            <li><a href="#binnning">Binnning</a></li>
+            <li><a href="#using-different-models">Using different models</a></li>
+            <li><a href="#using-different-loss-functions-to-measure-model-performance">Using different loss functions to measure model performance</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#novelty-detection">Novelty Detection</a></li>
+    <li><a href="#references-1">References</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="feature-engineering">
+  Feature Engineering
+  <a class="anchor" href="#feature-engineering">#</a>
+</h1>
+<p>The source of data available for Model training is vast, crude and usually not formatted. Various methods are employed to streamline the data to effectively train the model.</p>
+<h2 id="feature-selection">
+  Feature Selection
+  <a class="anchor" href="#feature-selection">#</a>
+</h2>
+<p>In feature selection the input attributes are dropped or modified based on the model.</p>
+<h2 id="dimensionality-reduction">
+  Dimensionality Reduction
+  <a class="anchor" href="#dimensionality-reduction">#</a>
+</h2>
+<p>Dimensionality reduction creates new combination of attributes. e.g. Principal Component Analysis, Singular Value Decomposition and Sammon’s Mapping.</p>
+<h3 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h3>
+<ul>
+<li><a href="https://jmlr.csail.mit.edu/papers/volume3/guyon03a/guyon03a.pdf">https://jmlr.csail.mit.edu/papers/volume3/guyon03a/guyon03a.pdf</a>
+=======</li>
+</ul>
+<h1 id="feature-engineering-1">
+  Feature Engineering
+  <a class="anchor" href="#feature-engineering-1">#</a>
+</h1>
+<p>Data sets that data scientists work upon arrives from multitude of sources. Hence, transforming data from these multiple sources to a common format is a mandatory step for deriving meaningful inference. Data will also have errors/deviations at the source of origin as well. We have a to make a careful consideration on how to handle such data points since these affect the learning model developed.</p>
+<p>The extreme observations, when it influences the model performance are called influential points. The extremeties are referred to as outliers or novelties depending on the context and it significance.</p>
+<ol>
+<li>Outlier Detection - Removing the extremeties so as to ignore those points for model learning.</li>
+<li>Novelty Detection - Set of datapoints exist and we need to determine if a new observation fit into the distribution. Anamoly detection, financial frauds comes under novelty detection.</li>
+</ol>
+<h2 id="outlier-detection">
+  Outlier Detection
+  <a class="anchor" href="#outlier-detection">#</a>
+</h2>
+<p>
+  <a href="https://www.datasciencecentral.com/profiles/blogs/introduction-to-outlier-detection-methods">Outlier Detection Methods</a></p>
+<h3 id="univariate-analysis">
+  Univariate analysis
+  <a class="anchor" href="#univariate-analysis">#</a>
+</h3>
+<h4 id="box-plot">
+  Box-Plot
+  <a class="anchor" href="#box-plot">#</a>
+</h4>
+<h4 id="scatter-plot">
+  Scatter Plot
+  <a class="anchor" href="#scatter-plot">#</a>
+</h4>
+<h4 id="iqr-score">
+  IQR Score
+  <a class="anchor" href="#iqr-score">#</a>
+</h4>
+<h4 id="cooks-distance">
+  Cook&rsquo;s Distance
+  <a class="anchor" href="#cooks-distance">#</a>
+</h4>
+<h4 id="z-score">
+  Z-Score
+  <a class="anchor" href="#z-score">#</a>
+</h4>
+<h3 id="multivariate-analysis">
+  Multivariate analysis
+  <a class="anchor" href="#multivariate-analysis">#</a>
+</h3>
+<h4 id="principal-component-analysis-pca">
+  Principal Component Analysis (PCA)
+  <a class="anchor" href="#principal-component-analysis-pca">#</a>
+</h4>
+<h4 id="local-outlier-factor-lof">
+  Local Outlier Factor (LOF)
+  <a class="anchor" href="#local-outlier-factor-lof">#</a>
+</h4>
+<h4 id="high-contrast-subspaces-for-density-based-outlier-ranking-hics">
+  High Contrast Subspaces for Density-Based Outlier Ranking (HiCS)
+  <a class="anchor" href="#high-contrast-subspaces-for-density-based-outlier-ranking-hics">#</a>
+</h4>
+<h3 id="handling-outliers">
+  Handling Outliers
+  <a class="anchor" href="#handling-outliers">#</a>
+</h3>
+<h4 id="drop-outlier">
+  Drop Outlier
+  <a class="anchor" href="#drop-outlier">#</a>
+</h4>
+<h4 id="impute-with-meanmedian">
+  Impute with Mean/Median
+  <a class="anchor" href="#impute-with-meanmedian">#</a>
+</h4>
+<h4 id="winsorizing">
+  Winsorizing
+  <a class="anchor" href="#winsorizing">#</a>
+</h4>
+<h4 id="log-scale-transformation">
+  Log-Scale Transformation
+  <a class="anchor" href="#log-scale-transformation">#</a>
+</h4>
+<h4 id="binnning">
+  Binnning
+  <a class="anchor" href="#binnning">#</a>
+</h4>
+<h4 id="using-different-models">
+  Using different models
+  <a class="anchor" href="#using-different-models">#</a>
+</h4>
+<p>Tree based models, such as random forests, are less impacted by the outliers. These models split the dataset into distinct, non-everlapping regions and compute the residual errors for each.</p>
+<h4 id="using-different-loss-functions-to-measure-model-performance">
+  Using different loss functions to measure model performance
+  <a class="anchor" href="#using-different-loss-functions-to-measure-model-performance">#</a>
+</h4>
+<p>Truncated loss function</p>
+<h2 id="novelty-detection">
+  Novelty Detection
+  <a class="anchor" href="#novelty-detection">#</a>
+</h2>
+<h2 id="references-1">
+  References
+  <a class="anchor" href="#references-1">#</a>
+</h2>
+<ul>
+<li>
+  <a href="https://scikit-learn.org/stable/modules/outlier_detection.html">Scikit-learn</a></li>
+<li>
+  <a href="https://www.quora.com/Why-are-tree-based-models-robust-to-outliers">Quora</a></li>
+<li>
+  <a href="https://heartbeat.fritz.ai/how-to-make-your-machine-learning-models-robust-to-outliers-44d404067d07">External-I</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://finklen.github.io/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://finklen.github.io/fr/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        French
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/finklen/pages/commit/ff68fff2e6eea0245cd2d7d652317306fbdc21cf" title='Last modified by Rajasekaran Rajaram | August 10, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>August 10, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/finklen/pages/edit/master//content/docs/ai_ml/feature_engineering/feature_engineering.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#feature-selection">Feature Selection</a></li>
+    <li><a href="#dimensionality-reduction">Dimensionality Reduction</a>
+      <ul>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#outlier-detection">Outlier Detection</a>
+      <ul>
+        <li><a href="#univariate-analysis">Univariate analysis</a>
+          <ul>
+            <li><a href="#box-plot">Box-Plot</a></li>
+            <li><a href="#scatter-plot">Scatter Plot</a></li>
+            <li><a href="#iqr-score">IQR Score</a></li>
+            <li><a href="#cooks-distance">Cook&rsquo;s Distance</a></li>
+            <li><a href="#z-score">Z-Score</a></li>
+          </ul>
+        </li>
+        <li><a href="#multivariate-analysis">Multivariate analysis</a>
+          <ul>
+            <li><a href="#principal-component-analysis-pca">Principal Component Analysis (PCA)</a></li>
+            <li><a href="#local-outlier-factor-lof">Local Outlier Factor (LOF)</a></li>
+            <li><a href="#high-contrast-subspaces-for-density-based-outlier-ranking-hics">High Contrast Subspaces for Density-Based Outlier Ranking (HiCS)</a></li>
+          </ul>
+        </li>
+        <li><a href="#handling-outliers">Handling Outliers</a>
+          <ul>
+            <li><a href="#drop-outlier">Drop Outlier</a></li>
+            <li><a href="#impute-with-meanmedian">Impute with Mean/Median</a></li>
+            <li><a href="#winsorizing">Winsorizing</a></li>
+            <li><a href="#log-scale-transformation">Log-Scale Transformation</a></li>
+            <li><a href="#binnning">Binnning</a></li>
+            <li><a href="#using-different-models">Using different models</a></li>
+            <li><a href="#using-different-loss-functions-to-measure-model-performance">Using different loss functions to measure model performance</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#novelty-detection">Novelty Detection</a></li>
+    <li><a href="#references-1">References</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+ 
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

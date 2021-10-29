@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classification on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/</link>
+    <description>Recent content in Classification on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/supervised_learning/classification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Classification Model Evaluation</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/evalutaion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/evalutaion/</guid>
+      <description>Evaluation Metrics - Classification Accuracy
+Evaluation of classification model #  Generative model Naive Bayes models the joint distribution of the feature X and target Y, and then predicts the posterior probability given as P(y|x). e.g. Naive Bayes, Bayesian Networks and Hidden Markov models
+Discriminative model Logistic regression directly models the posterior probability of P(y|x) by learning the input to output mapping by minimising the error. e.g. Logistic Regression, Support Vector Machine and Conditional Random Fields</description>
+    </item>
+    
+    <item>
+      <title>Decision Trees</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/decision_trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/decision_trees/</guid>
+      <description> Eager learners Works only in discrete data  </description>
+    </item>
+    
+    <item>
+      <title>kNN Classifier</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/kNN_classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/kNN_classification/</guid>
+      <description>K Nearest Neighbour(kNN) Classifier #    Works with numeric data
+  Lazy learning
+  Instance based, lazy evaluation model i.e. store the data, at times with minimal processing, and evaulted once the test tuple is received
+  Approaches #    k-nearest neighbour approach - Instance represented as a point in euclidean space
+  Case-based reasoning - Uses symbolic representations and knowledge-based inferences</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes Classifier</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/naive_bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/naive_bayes/</guid>
+      <description> Assumes the features are independent and contributes to the predict (Class conditional assumption) Based on bayes theorem  H - Hypothesis E - Evidence P(H) - Prior Probability P(H|E) - Posterior Probability P(E|H) - Likelihood Ratio
+Probability of occurrence of hypothesis H given E is,
+P(H|E) = P(E|H) * P(H) / P(E)
+P(A|B) = P(A inter B) / P(B)
+P(B|A) = P(B inter A) / P(A)
+  \[posterior = prior x likelihood\]  Types #   Guassian - Normally distributed data Multinomial - Bernoulli - Feature vectors are binary  </description>
+    </item>
+    
+    <item>
+      <title>Support Vector Machines</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/support_vector_machines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/support_vector_machines/</guid>
+      <description>The shortest distance between the observations and the threshold is called the margin. When we use the threshold that gives the largest margin to make classifications it is call Maximum margin classifier.
+  Eager learners
+  Works for both linear and non-linear classification
+  Discriminative model
+  Leverages max margin classifier
+  Feature scaling
+  Distance based algorithm
+  Maximum margin classifier #  Sensitive to outliers</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/logistic_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/logistic_regression/</guid>
+      <description>Logistic Regression #   Eager learners Logistic regression is a classification algorithm, that uses Sigmoid function. S-shaped curve varying between 0 and 1 and asymtotes at the tails Unlike linear regression the out vairable is discrete Logictic function takes any value and maps it between the range of 0 and 1 Can work on both continuous and discrete attributes When using multiple attributes we cannot compare models as such. Hence we remove/add attributes and check if the variableseffect on prediction is greater than zero.</description>
+    </item>
+    
+    <item>
+      <title>Classification</title>
+      <link>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/supervised_learning/classification/classification/</guid>
+      <description>Classification Algorithms #  Eager and Lazy Learning #  Eager learning models creates a model using the training data and use that on the test data for classification.
+Lazy(or instance based) learning models simply stores the training data set and waits until the test dataset is given, e.g. kNN classifier. Less time in training and mode time in test.
+Lazy learning approaches #   k-nearest neighbour Case-base reasoning  </description>
+    </item>
+    
+  </channel>
+</rss>

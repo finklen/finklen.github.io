@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Logistic Regression #   Eager learners Logistic regression is a classification algorithm, that uses Sigmoid function. S-shaped curve varying between 0 and 1 and asymtotes at the tails Unlike linear regression the out vairable is discrete Logictic function takes any value and maps it between the range of 0 and 1 Can work on both continuous and discrete attributes When using multiple attributes we cannot compare models as such. Hence we remove/add attributes and check if the variableseffect on prediction is greater than zero.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
+<meta property="og:description" content="Logistic Regression #   Eager learners Logistic regression is a classification algorithm, that uses Sigmoid function. S-shaped curve varying between 0 and 1 and asymtotes at the tails Unlike linear regression the out vairable is discrete Logictic function takes any value and maps it between the range of 0 and 1 Can work on both continuous and discrete attributes When using multiple attributes we cannot compare models as such. Hence we remove/add attributes and check if the variableseffect on prediction is greater than zero." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://finklen.github.io/docs/ai_ml/supervised_learning/classification/logistic_regression/" />
+<meta property="article:modified_time" content="2020-08-17T19:48:01+05:30" />
+<title>Logistic Regression | Finklen</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.f4513b2d8fab87aa86ea84b12e6ef34545da99769cec9d70c06ab774f08bda78.css" integrity="sha256-9FE7LY&#43;rh6qG6oSxLm7zRUXamXac7J1wwGq3dPCL2ng=">
+<script defer src="/en.search.min.7f0a1078eb9d2490a0d5be7c04375452c0548bb7f83fae1e2f050ae837aaca4a.js" integrity="sha256-fwoQeOudJJCg1b58BDdUUsBUi7f4P64eLwUK6Deqyko="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Finklen</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/" class="collapsed ">AI and ML</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/computer_vision/" class="collapsed ">Computer Vision</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/" class="collapsed ">Feature Engineering</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/natural_language_processing/" class="collapsed ">NLP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/bias_and_variance/" class="">Bias and Variance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/diffusion_models/" class="">Diffusion Models</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/measure/" class="">Measure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/terminologies/" class="">Terminologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Time Series Analysis</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/time_series_analysis/models/" class="">Models</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/reinforcement_learning/" class="">Reinforcement learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/" class="collapsed ">Supervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/" class="collapsed ">Classification</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/evalutaion/" class="">Classification Model Evaluation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/decision_trees/" class="">Decision Trees</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/kNN_classification/" class="">kNN Classifier</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/naive_bayes/" class="">Naive Bayes Classifier</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/support_vector_machines/" class="">Support Vector Machines</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/logistic_regression/" class="active">Logistic Regression</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/classification/classification/" class="">Classification</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/regression/" class="collapsed ">Regression</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/unsupervised_learning/" class="collapsed ">Unsupervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/" class="">Software</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/data_structures/" class="collapsed ">Data Structures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/file_systems/" class="collapsed ">File Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/networking/" class="collapsed ">Networking</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/os/" class="collapsed ">Operating Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/languages/" class="collapsed ">Programming</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/protocols/" class="collapsed ">Protocols</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/security/" class="collapsed ">Security</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/architecture/" class="collapsed ">Software Architectures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/" class="collapsed ">Standards</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/algorithms/max_sub_array_sum/" class="">Max Sum Subarray</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/" class="">System design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/best_selling_rank/" class="">Best Seller Rank</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/topk/" class="">Top K</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/iot/lpwan/" class="">Lpwan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Logistic Regression</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#representation">Representation</a></li>
+    <li><a href="#interpretation">Interpretation</a></li>
+    <li><a href="#cost-function">Cost Function</a></li>
+    <li><a href="#interpretation-1">Interpretation</a></li>
+    <li><a href="#logit">Logit</a></li>
+    <li><a href="#optimization-algorithms">Optimization Algorithms</a></li>
+    <li><a href="#cross-entropy">Cross Entropy</a>
+      <ul>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="logistic-regression">
+  Logistic Regression
+  <a class="anchor" href="#logistic-regression">#</a>
+</h1>
+<ul>
+<li>Eager learners</li>
+<li>Logistic regression is a classification algorithm, that uses Sigmoid function.</li>
+<li>S-shaped curve varying between 0 and 1 and asymtotes at the tails</li>
+<li>Unlike linear regression the out vairable is discrete</li>
+<li>Logictic function takes any value and maps it between the range of 0 and 1</li>
+<li>Can work on both continuous and discrete attributes</li>
+<li>When using multiple attributes we cannot compare models as such. Hence we remove/add attributes and check if the variableseffect on prediction is greater than zero. (Wald&rsquo;s Test)</li>
+<li>The non helping attribute is referred as &ldquo;totes useless&rdquo;</li>
+<li>Unlike linear regression the residuals concept doesn&rsquo;t apply here. Hence max likelihood is used to fit the curve</li>
+<li>Special type of Generalized Linear Models (GLM)</li>
+<li>Though presented as a logistic function, the coefficients are determined using liner function by converting to logit function.</li>
+</ul>
+<h2 id="representation">
+  Representation
+  <a class="anchor" href="#representation">#</a>
+</h2>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \[h({\theta}) = {1 \above{1pt} (1 &#43; e^-{\theta^{T}x})} \qquad \text{e - natural logarithm base}\]
+</span>
+
+<span>
+  \[y \isin \lbrace 0, 1 \rbrace   \qquad 0: \text{Negative case; 1: Positive case }\]
+</span>
+
+<h2 id="interpretation">
+  Interpretation
+  <a class="anchor" href="#interpretation">#</a>
+</h2>
+<p>The output of the hypothesis function is interpreted as the probability of the target bring positive given features x parameterized by <span>
+  \(\theta\)
+</span>
+</p>
+<span>
+  \[P(y=1|x;\theta) &#43; P(y=0|x;\theta) = 1
+
+\\
+
+P(y=1|x;\theta) = 1 - P(y=0|x;\theta)\]
+</span>
+
+<h2 id="cost-function">
+  Cost Function
+  <a class="anchor" href="#cost-function">#</a>
+</h2>
+<span>
+  \[J({\theta}) = {1 \above{1pt} m}  \sum_{\substack{i = 0}}^m Cost(h_{\theta}(x^i), y^i) \qquad \begin{dcases}
+                            {Cost(h_{\theta}(x^i), y^i) = −log(h_{\theta}(x))}  &amp;\text{if y = 1} \\
+                            {Cost(h_{\theta}(x^i), y^i) = −log(1−h_{\theta}(x)} &amp;\text{if y = 0}
+                            \end{dcases}\]
+</span>
+
+<p>Cost function can be simplified as below; Substution y = 0 or 1 gives the same function above,
+<span>
+  \[Cost(h_{\theta}(x^i), y^i) = -y * log(h_{\theta}(x)) - (1 - y) * log(1 − h_{\theta}(x)\]
+</span>
+</p>
+<span>
+  \[J({\theta}) =  - {1 \above{1pt} m}  \sum_{\substack{i = 0}}^m y^i log(h_{\theta}(x)) &#43; (1 - y^i) log(1 - h_{\theta}(x))\]
+</span>
+
+<blockquote>
+<p>Maximum likelihood estimation</p>
+</blockquote>
+<h2 id="interpretation-1">
+  Interpretation
+  <a class="anchor" href="#interpretation-1">#</a>
+</h2>
+<ul>
+<li>Logistic regression models probability of the positive class.</li>
+</ul>
+<h2 id="logit">
+  Logit
+  <a class="anchor" href="#logit">#</a>
+</h2>
+<ul>
+<li><span>
+  \(logit^{-1}(x) = logistic(x)\)
+</span>
+</li>
+<li>Find the y-intercept</li>
+<li>Find the standard-deviation</li>
+<li>z-value = y-intercept / standard-deviation; # of std deviations the y-intercept is away from mean of the normal curve</li>
+<li>Use Wald&rsquo;s test to determine statistic significance.If the z-value is &lt; 2 std dev, then insignificant</li>
+</ul>
+<!-- # Multinomial logistic regression -->
+<!-- # Binary logistic regression -->
+<h2 id="optimization-algorithms">
+  Optimization Algorithms
+  <a class="anchor" href="#optimization-algorithms">#</a>
+</h2>
+<ul>
+<li>Gradient Descedent</li>
+<li>Conjugate Gradient</li>
+<li>BFGS</li>
+<li>L-BFGS</li>
+</ul>
+<h2 id="cross-entropy">
+  Cross Entropy
+  <a class="anchor" href="#cross-entropy">#</a>
+</h2>
+<p>Unlike linear regression the prediction function(sigmoid function), the cost function has many local and global minima. Hence gradient descent cannot be used. Hence Cross entropy is used; also known as Loss function.</p>
+<h3 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h3>
+<ul>
+<li>
+  <a href="https://stats.stackexchange.com/questions/127042/why-isnt-logistic-regression-called-logistic-classification/127044#127044">Why isn&rsquo;t Logistic Regression called Logistic Classification?</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://finklen.github.io/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://finklen.github.io/fr/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        French
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/finklen/pages/commit/54baa74ffabc4d809c11184668ba34b72b524968" title='Last modified by Rajasekaran Rajaram | August 17, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>August 17, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/finklen/pages/edit/master//content/docs/ai_ml/supervised_learning/classification/logistic_regression.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#representation">Representation</a></li>
+    <li><a href="#interpretation">Interpretation</a></li>
+    <li><a href="#cost-function">Cost Function</a></li>
+    <li><a href="#interpretation-1">Interpretation</a></li>
+    <li><a href="#logit">Logit</a></li>
+    <li><a href="#optimization-algorithms">Optimization Algorithms</a></li>
+    <li><a href="#cross-entropy">Cross Entropy</a>
+      <ul>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+ 
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI and ML on Finklen</title>
+    <link>https://finklen.github.io/docs/ai_ml/</link>
+    <description>Recent content in AI and ML on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/ai_ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/bias_and_variance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/bias_and_variance/</guid>
+      <description>Bias #  The difference between the data points and the fit line is bias.
+Variance #  The estimation diference across different set is variability
+Ideal model should have low bias and low variance. Simple and complex models are created to find the optimal bias and variance across test and training set.
+Finding optimal trade off #   Regularization Boosting Bagging  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/diffusion_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/diffusion_models/</guid>
+      <description>Diffusion Models #  Diffusion models are used in forecasting the future for a possibility without emprical knowledge.
+  BASS  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/measure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/measure/</guid>
+      <description>Evaluating model proficieny #  Devloping a machine learning model is one half of the coin, the other half however is measure the performance of the model and improving its efficiency. There are multidude ways of measuring the performance of model, most of them are generic in nature and can be used across mutliple models, and some are specifically designed towards specific learnging algorithms.
+Cross Validation #   Statistical method to evalaute the model Lower bias  k-fold Cross Validation #   Evaluating models with limited set of data  Pseudocode,</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/ai_ml/terminologies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/ai_ml/terminologies/</guid>
+      <description>Probability #  Random experiment - An act that has predefined number of outcomes.
+Elementary Event - Each individual possiblity in a random experiment. All possible elementary events of an experiment together make the the sample space of the experiment.
+Random event - Combination of set/subset of elementary events, such as tosssing a coin multiple times.
+Marginal Probablity - Probablity of occurance of an event. This is probability in its most basic form.</description>
+    </item>
+    
+  </channel>
+</rss>

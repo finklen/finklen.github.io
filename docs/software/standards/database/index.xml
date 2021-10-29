@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Conventions on Finklen</title>
+    <link>https://finklen.github.io/docs/software/standards/database/</link>
+    <description>Recent content in Database Conventions on Finklen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://finklen.github.io/docs/software/standards/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/data_locality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/data_locality/</guid>
+      <description>Google spanner DB locality features Oracle&amp;rsquo;s multi-table index cluster tables Bigtable&amp;rsquo;s column-family</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/document_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/document_model/</guid>
+      <description>Document Model #  Hierarchical structure of data nested within each other Access path for nested attributes is required Has same problem as RDBMS with respect to Joins. Data locality can be a problem for for entity. i.e. complete document is read and written every time. Some models provide sub-document lookup and updates (Couchbase)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://finklen.github.io/docs/software/standards/database/graph_data_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/graph_data_model/</guid>
+      <description>Graph-like Data Models #  Suitable for many to many relationship models
+Calorich M ativan 1 mg *M
+liposerin concor 5 mg Renerve Bt 3</description>
+    </item>
+    
+    <item>
+      <title>RDBMS</title>
+      <link>https://finklen.github.io/docs/software/standards/database/rdbms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://finklen.github.io/docs/software/standards/database/rdbms/</guid>
+      <description>RDBMS #  Shredding Splitting an entity into multiple relationshsips [Person, Education, Experience]
+Schema on Write #  Strict enforcement of schema unlike NoSQL databases that has loose schema (Schema on Read).
+Schema Changes #  Schema changes are hard to change without downtime. Database migration tools must be used for easier maintance and roll backs.
+ Liquibase Flyway  </description>
+    </item>
+    
+  </channel>
+</rss>

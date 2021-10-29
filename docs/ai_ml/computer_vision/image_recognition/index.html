@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Object recognition and Image Processing #  Techiniques,
+ HOG - Histogram of Oriented Graphics SIFT - Scale Invariant Feature Transform CNN - Conventional Neural Network  ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Image Recognition" />
+<meta property="og:description" content="Object recognition and Image Processing #  Techiniques,
+ HOG - Histogram of Oriented Graphics SIFT - Scale Invariant Feature Transform CNN - Conventional Neural Network  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://finklen.github.io/docs/ai_ml/computer_vision/image_recognition/" />
+<meta property="article:modified_time" content="2021-05-20T21:37:07+05:30" />
+<title>Image Recognition | Finklen</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.f4513b2d8fab87aa86ea84b12e6ef34545da99769cec9d70c06ab774f08bda78.css" integrity="sha256-9FE7LY&#43;rh6qG6oSxLm7zRUXamXac7J1wwGq3dPCL2ng=">
+<script defer src="/en.search.min.7f0a1078eb9d2490a0d5be7c04375452c0548bb7f83fae1e2f050ae837aaca4a.js" integrity="sha256-fwoQeOudJJCg1b58BDdUUsBUi7f4P64eLwUK6Deqyko="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Finklen</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/" class="collapsed ">AI and ML</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/computer_vision/" class="collapsed ">Computer Vision</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/computer_vision/image_recognition/" class="active">Image Recognition</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/feature_engineering/" class="collapsed ">Feature Engineering</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/natural_language_processing/" class="collapsed ">NLP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/bias_and_variance/" class="">Bias and Variance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/diffusion_models/" class="">Diffusion Models</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/measure/" class="">Measure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/terminologies/" class="">Terminologies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Time Series Analysis</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/time_series_analysis/models/" class="">Models</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/reinforcement_learning/" class="">Reinforcement learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/supervised_learning/" class="collapsed ">Supervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/unsupervised_learning/" class="collapsed ">Unsupervised learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/" class="">Software</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/data_structures/" class="collapsed ">Data Structures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/file_systems/" class="collapsed ">File Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/networking/" class="collapsed ">Networking</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/os/" class="collapsed ">Operating Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/languages/" class="collapsed ">Programming</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/protocols/" class="collapsed ">Protocols</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/security/" class="collapsed ">Security</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/architecture/" class="collapsed ">Software Architectures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/" class="collapsed ">Standards</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/algorithms/max_sub_array_sum/" class="">Max Sum Subarray</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/" class="">System design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/best_selling_rank/" class="">Best Seller Rank</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/topk/" class="">Top K</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/iot/lpwan/" class="">Lpwan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Image Recognition</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#object-recognition-and-image-processing">Object recognition and Image Processing</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="object-recognition-and-image-processing">
+  Object recognition and Image Processing
+  <a class="anchor" href="#object-recognition-and-image-processing">#</a>
+</h2>
+<p>Techiniques,</p>
+<ul>
+<li>HOG - Histogram of Oriented Graphics</li>
+<li>SIFT - Scale Invariant Feature Transform</li>
+<li>CNN - Conventional Neural Network</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://finklen.github.io/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://finklen.github.io/fr/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        French
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/finklen/pages/commit/7d78ac67e12586eaef450e22f963e68cfd7977ec" title='Last modified by Rajasekaran Rajaram | May 20, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>May 20, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/finklen/pages/edit/master//content/docs/ai_ml/computer_vision/image_recognition.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#object-recognition-and-image-processing">Object recognition and Image Processing</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+ 
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

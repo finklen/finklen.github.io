@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="REST-ful API Practices #  In REST the primary unit of identification is a resource that is accessed by a URI. A RESTful URI must convey the resource&rsquo;s model to its clients.
+Resource Naming conventions #   Use nouns instead of verbs. Nouns have properties and resources have attributes. Use plural nouns Multi-worded nouns  Considerations #  Different companies have used different strategies. There is no universal consensus on multi-worded nouns.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="REST-ful API Practices" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://finklen.github.io/docs/software/standards/rest/" />
+
+<title>REST-ful API Practices | Finklen</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.f4513b2d8fab87aa86ea84b12e6ef34545da99769cec9d70c06ab774f08bda78.css" integrity="sha256-9FE7LY&#43;rh6qG6oSxLm7zRUXamXac7J1wwGq3dPCL2ng=">
+<script defer src="/en.search.min.7f0a1078eb9d2490a0d5be7c04375452c0548bb7f83fae1e2f050ae837aaca4a.js" integrity="sha256-fwoQeOudJJCg1b58BDdUUsBUi7f4P64eLwUK6Deqyko="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<link rel="alternate" type="application/rss+xml" href="https://finklen.github.io/docs/software/standards/rest/index.xml" title="Finklen" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Finklen</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/ai_ml/" class="collapsed ">AI and ML</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/" class="">Software</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/data_structures/" class="collapsed ">Data Structures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/file_systems/" class="collapsed ">File Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/networking/" class="collapsed ">Networking</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/os/" class="collapsed ">Operating Systems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/languages/" class="collapsed ">Programming</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/protocols/" class="collapsed ">Protocols</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/security/" class="collapsed ">Security</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/architecture/" class="collapsed ">Software Architectures</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/" class="collapsed ">Standards</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/database/" class="collapsed ">Database Conventions</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/event-sourcing/" class="">Event Sourcing</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/graph-ql/" class="">GraphQL Conventions</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/rest/" class="active">REST-ful API Practices</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/serialization/" class="">Serialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/http_3/" class="">HTTP/3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/streams/" class="">Streams</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/standards/streams/mechanism/" class="">Mechanism</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/algorithms/max_sub_array_sum/" class="">Max Sum Subarray</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/" class="">System design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/best_selling_rank/" class="">Best Seller Rank</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/software/system_design/topk/" class="">Top K</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/iot/lpwan/" class="">Lpwan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>REST-ful API Practices</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resource-naming-conventions">Resource Naming conventions</a></li>
+    <li><a href="#considerations">Considerations</a></li>
+    <li><a href="#nest-hierarchical-objects">Nest Hierarchical objects</a></li>
+    <li><a href="#versioning">Versioning</a></li>
+    <li><a href="#backwards-compatibility">Backwards Compatibility</a></li>
+    <li><a href="#date-and-time">Date and Time</a></li>
+    <li><a href="#http-verbs">HTTP Verbs</a></li>
+    <li><a href="#http-headers">HTTP Headers</a></li>
+    <li><a href="#api-first-approach">API First Approach</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#authentication">Authentication</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="rest-ful-api-practices">
+  REST-ful API Practices
+  <a class="anchor" href="#rest-ful-api-practices">#</a>
+</h1>
+<p>In REST the primary unit of identification is a resource that is accessed by a URI. A RESTful URI must convey the resource&rsquo;s model to its clients.</p>
+<h2 id="resource-naming-conventions">
+  Resource Naming conventions
+  <a class="anchor" href="#resource-naming-conventions">#</a>
+</h2>
+<ul>
+<li>Use nouns instead of verbs. Nouns have properties and resources have attributes.</li>
+<li>Use plural nouns</li>
+<li>Multi-worded nouns</li>
+</ul>
+<h2 id="considerations">
+  Considerations
+  <a class="anchor" href="#considerations">#</a>
+</h2>
+<p>Different companies have used different strategies. There is no universal consensus on multi-worded nouns.</p>
+<ul>
+<li>Camel Case</li>
+<li>Underscores</li>
+<li>Hyphens</li>
+</ul>
+<p>Projects in this repository follow hyphenated names. Since URLs are ideally case sensitive we avoid using it. So, between underscores and hyphens, we are going with hyphens as our choice of separators.</p>
+<h2 id="nest-hierarchical-objects">
+  Nest Hierarchical objects
+  <a class="anchor" href="#nest-hierarchical-objects">#</a>
+</h2>
+<h2 id="versioning">
+  Versioning
+  <a class="anchor" href="#versioning">#</a>
+</h2>
+<p>By default, support the response with the most updated API version if none is requested. It is recommended that the clients explicitly request the required version trough the request headers.</p>
+<pre><code>Accept: application/vnd.github.v3+json
+</code></pre><h2 id="backwards-compatibility">
+  Backwards Compatibility
+  <a class="anchor" href="#backwards-compatibility">#</a>
+</h2>
+<p>API contract can change multiple times over the course of development. However, once a change is implemented in production breaking a contract is a grave offence. Nevertheless, contracts won&rsquo;t be the same during the life of the application and changes are inevitable.  </p>
+<h2 id="date-and-time">
+  Date and Time
+  <a class="anchor" href="#date-and-time">#</a>
+</h2>
+<p>All date and time should be in ISO 8601 format.</p>
+<p>
+  <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a></p>
+<h2 id="http-verbs">
+  HTTP Verbs
+  <a class="anchor" href="#http-verbs">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HEAD</td>
+<td>Depending of application</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>Retrieving resource</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Creating resources</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>Partial update of resource</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Replacing resource</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Delete resource</td>
+</tr>
+</tbody>
+</table>
+<h2 id="http-headers">
+  HTTP Headers
+  <a class="anchor" href="#http-headers">#</a>
+</h2>
+<h2 id="api-first-approach">
+  API First Approach
+  <a class="anchor" href="#api-first-approach">#</a>
+</h2>
+<h2 id="documentation">
+  Documentation
+  <a class="anchor" href="#documentation">#</a>
+</h2>
+<p>OpenAPI</p>
+<h2 id="authentication">
+  Authentication
+  <a class="anchor" href="#authentication">#</a>
+</h2>
+<p>Authentication tokens must be passed through <code>Authorization</code> headers. Do not use query parameters.</p>
+<h2 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h2>
+<ul>
+<li>
+  <a href="https://restfulapi.net/resource-naming/">External-I</a></li>
+<li>
+  <a href="https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/">Stack Overflow</a></li>
+<li>
+  <a href="https://docs.github.com/en/rest/overview/resources-in-the-rest-api">Github</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://finklen.github.io/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://finklen.github.io/fr/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        French
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/finklen/pages/commit/585ca776c26353b3c80c2fa1d7d87c78c4589637" title='Last modified by Rajasekaran Rajaram | May 20, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>May 20, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/finklen/pages/edit/master//content/docs/software/standards/rest/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resource-naming-conventions">Resource Naming conventions</a></li>
+    <li><a href="#considerations">Considerations</a></li>
+    <li><a href="#nest-hierarchical-objects">Nest Hierarchical objects</a></li>
+    <li><a href="#versioning">Versioning</a></li>
+    <li><a href="#backwards-compatibility">Backwards Compatibility</a></li>
+    <li><a href="#date-and-time">Date and Time</a></li>
+    <li><a href="#http-verbs">HTTP Verbs</a></li>
+    <li><a href="#http-headers">HTTP Headers</a></li>
+    <li><a href="#api-first-approach">API First Approach</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#authentication">Authentication</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175042681-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+ 
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
